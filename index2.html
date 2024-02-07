@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Bootstrap 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">        
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ralphs Code</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Messages<span class="badge bg-success mx-1">12</span></a>
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Expertise
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                      <li><a class="dropdown-item" href="#">BootStrap</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Python</a></li>
+                      <li><a class="dropdown-item" href="#">AWS</a></li>
+                      <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                    </ul>
+                  </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="http://www.linkedin.com/in/ralph-godkin/" target="_blank">Linked-In</a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/RalphsCode" target="_blank">GitHub</a>
+                </li>
+                
+                
+              </ul>
+             </div>
+          </div>
+      </nav>
+
+<div class="display-7 fw-bold mt-2">Dashboard:</div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Team</th>
+            <th scope="col">All Star</th>
+            <th scope="col">Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Steph</td>
+            <td>Warriors</td>
+            <td>Yes<span class="badge bg-primary mx-2">GOAT</span></td>
+            <td><span class="badge bg-danger mx-1"><i class="fa-regular fa-trash-can"></i></span></td>
+          </tr>
+          <tr>
+            <td>LeBron</td>
+            <td>Lakers</td>
+            <td>Yes</td>
+            <td><span class="badge bg-danger mx-1"><i class="fa-regular fa-trash-can"></i></span></td>
+          </tr>
+          <tr>
+            <td>Dwayne</td>
+            <td> Heat</td>
+            <td>Yes</td>
+            <td><span class="badge bg-danger mx-1"><i class="fa-regular fa-trash-can"></i></span></td>
+          </tr>          <tr>
+            <td>Wemby</td>
+            <td>Spurs</td>
+            <td>Yes<span class="badge bg-success mx-2">First</span></td>
+            <td><span class="badge bg-danger mx-1"><i class="fa-regular fa-trash-can"></i></span></td>
+          </tr>
+          <tr>
+            <td>Isiah</td>
+            <td>Celtics</td>
+            <td>Yes<span class="badge bg-warning mx-2">Last</span></td>
+            <td><span class="badge bg-danger mx-1"><i class="fa-regular fa-trash-can"></i></span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    <div class="display-8 fw-bold mt-2">Todos:</div>
+      <div class="bg-success display-block ps-2">Feel good about BootStrap
+        <!-- Popover -->
+        <button type="button" class="btn btn-sm btn-success" data-bs-toggle="popover" data-bs-title="Congratulations" data-bs-content="Glad you are getting the hang of it. Keep up the good work!">message<span class="badge bg-success mx-1">1</span></button>
+      </div>
+      <div class="bg-info display-block ps-2">Feel informed about BootStrap</div>
+      <div class="bg-warning display-block ps-2">Feel warned about BootStrap</div>
+      <div class="bg-warning display-block ps-2">Maybe I should read the docs
+        <button type="button" class="btn btn-link-success btn-sm fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            (launch demo modal)
+          </button>
+      </div>
+      <div class="bg-danger display-block ps-2">Danger zone</div>
+      <div class="bg-danger display-block ps-2">I really should read the docs...</div>
+
+<!-- MODAL -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">BootStrap Documentation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          The BootStrap documentation is easy to read and follow. Find it at: <a href="https://getbootstrap.com/docs/" target="_blank">www.getbootstrap.com/docs/</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+ 
+   <!-- Initialize popover using JavaScript -->
+    <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    });
+</script>
+
+</body>
+</html>
